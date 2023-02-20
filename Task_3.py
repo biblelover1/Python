@@ -7,11 +7,29 @@
 # 385916 -> yes
 # 123456 -> no
 
-# ticket = input("Введите 6-ти значный номер билета: ")
-# res = 0
-# res1 = 0
-# if len(ticket) != 6:
-#     print("Error")
+ticket = input("Введите 6-ти значный номер билета: ")
+res = 0
+res1 = 0
+if len(ticket) != 6:
+    print("Error")
+else:
+    for i in range(0, 6):
+        if i < 3:
+            n = ticket[i]
+            n = int(n)
+            res += n
+        else:
+            n = ticket[i]
+            n = int(n)
+            res1 += n
+    if res == res1:
+        print("Ура! Билет счастливый")
+    else:
+        print("Эх, не повезло")
+
+
+
+
 # else:
 #     for i in range(0,3):
 #         n = ticket[i]

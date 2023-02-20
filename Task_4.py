@@ -4,10 +4,12 @@
 # 3 2 4 -> yes
 # 3 2 1 -> no
 
-# long = int(input("Введите длину шоколадки: "))
-# width = int(input("Введите ширину шоколадки: "))
-# doli = int(input("Введите количество долек шоколадки: "))
-# if doli % long == 0 or doli % width == 0:
-#     print("YES")
-# else:
-#     print("NO")
+long = int(input("Введите длину шоколадки: "))
+width = int(input("Введите ширину шоколадки: "))
+k = int(input("Введите количество долек шоколадки: "))
+if k >= long * width:
+    print("Ошибка")
+if k % long == 0 or k % width == 0:
+    print("YES")
+else:
+    print("NO")
