@@ -21,7 +21,7 @@ if find_numb not in list_1:
 # print(list_1)
     list_1.sort()
     a = list_1.index(find_numb)
-    print(a)
+#   print(a)
     if a == b:
         print(list_1[a-1])
     elif a < b:
@@ -29,8 +29,10 @@ if find_numb not in list_1:
         right_numb = list_1[a+1] - find_numb
         if left_numb < right_numb:
             print(list_1[a-1])
-        else:
+        elif left_numb > right_numb:
             print(list_1[a+1])
+        else:
+            print(f"There are two nearest numbers to desired: {list_1[a-1]} and {list_1[a+1]}")
 else:
     print(list_1.index(find_numb))
 
