@@ -12,14 +12,9 @@
 list1 = [int(input("numb: ")) for i in range(int(input("Enter size of first list")))]
 list2 = [int(input("numb: ")) for i in range(int(input("Enter size of second list")))]
 set1 = set(list1)
-
 set2 = set(list2)
-
 res = set1.intersection(set2)
-
-uniomList = list(res)
-uniomList.sort()
-print(uniomList)
+print(sorted(res))
 
 
 
